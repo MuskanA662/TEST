@@ -1,0 +1,230 @@
+1.Explaination of jdk,jre,jvm
+ jdk:java developement kit
+ jdk contain jre and developement tools
+ jdk helps during the compilation of program
+ 
+ jre:java runtime emvironment
+ jre contains jvm and set of libraries
+ it will load the bite code,verify the byte code,run the byte code
+ 
+ jvm:java virtual machine 
+ tasks:
+	Loads the byte code 
+	Verifies the byte code
+	Execute the byte code
+
+	To call jvm we use it to compile the programme.
+	jvm provide run time and perform the code to get the message or out put.
+    
+	
+	
+	
+
+2.1.Explain following:
+	 Class:Design which contain state and behavior
+	 Object:Instance of class
+	 purpose is to create  multiple copy of class
+	 Static:Access modifier
+	 Public:
+	 Private:
+	 keyword:Pre-defined values by the java compiler
+	 
+	 
+	 
+	 
+	 
+ 
+2.2.public static void main(String args[])
+Its a main method in the java contains sub parts as:
+	
+Public static :accaess specifiers/modifiers 
+Their is also private
+Static:non accaess modifiers
+Void:return type(anything beyond)
+Strings a[]:parameters
+Main :method name(jvm is looking for main)
+
+
+
+	
+
+2.3.What is array
+ Its a container which used to store the value in it.
+ We used these array to store multiple data at a time into single variable.
+ This will reduce the code length and increase the reuseablity
+ Array is having 2 types:1.soingle dimensional array
+					     2.Multi dimentional array
+						 
+						 
+						 
+						 
+
+2.4.Write program given array number[]={23,45,67,8,12,3,7,9,102,34,4,5}
+   Count the number of prime numbers in the given array:
+     
+	 
+
+   
+	class Prime
+{
+	public static void main(String args[])
+	{
+		int n = {23,45,67,8,12,3,7,9,102,34,4,5};
+		for(int i=0;i<n.length;i++)
+		{
+			Syatem.out.println("array length is" +n.length);
+			if(n % 2 == 0)
+		{
+			System.out.println("The number is not prime and even");
+	    }
+		else{
+	     System.out.println("The number is prime not even");
+	  
+	  }
+	  
+	  
+	}
+
+}
+   
+   
+   
+   
+   
+   
+2.5.Explain the dat types in java give examples for each:
+	Data type is are used to indicate the type of data we are storing in a variable
+	These will helps the memory allocaton of data
+	Their are 2 types in datatypes are:
+		1.Premitive data type:ex:byte,int,float,char,bit,double,char,bool.
+		2.Non premitive data types:class,string,array,etc
+		
+			
+			
+			
+			
+		
+2.6.Explain the variable with example
+	These are the registered area allocated in the memory.
+types of varibale:
+1.	Local variable: variable declared inside main ,inside constructor, inside block called local variables.(main is method).
+Declaration and initialization is must.
+  2. static variable: variables declared with static word called static 
+     Variable.
+Declaration is done but no initialization of variable.
+3. instance/non static variable: variables declared outside main, outside 
+   constructor  outside but inside class.
+4.	parameters:
+
+Variable is getting stored in stack but data is getting stored in heap of java memory.
+
+
+
+
+
+
+7.What is constructor when is the class constructor invoked will a class contain multiple constructor explain types with examples:
+	Constructor is special type of method which will be same name as class with no written type 
+	Helpful by using new to create the object.
+	Every class had constructor mandatorily.
+	If we wont create java constructor under java compiler will create constructor for our class if we won’t create
+
+
+8.Explain java features:
+Simple and easy:doesnt use pointer and header
+platform independent:
+Dynamic:have capablity to link classes methods and object 
+Object oriented:no coding outside object
+high performance:jvm execute byte code very fast
+portable :easy to carry
+interpreted byte code interpreted by jvm increase security 
+distributed:provide network facility http ftp
+secure:access ristrictions by access modifiers
+robust:inbuilt capacity to handle errors
+platform independent:java can executed with any platforms just have the jre in it
+
+
+
+9.What gives java its 'write once and run anywhere'nature
+portable nature of java 
+platform independent nature
+
+10.What is the purpose of static method and variables
+	Static members (variables and methods) are class members Where as Instance members are object members.
+	Static VS Instance:
+	Static members access with class name instance members are accessed by reference.
+	Instance get loaded in memory after creating the object where as static members will get loaded into memory along with the class name.
+
+
+11.What is the purpose of default constructor
+	Constructor which is written by compiler is called as default constructor.
+	Constructor access modifier most recommended is public.
+	Instance variable can be access with the help of reference variables.
+
+
+12.Write a program to reverse  given number
+ex: 1234
+
+Class Riverse{
+public static void main(String a[]{
+int a=1234,b;
+int c=0;
+while(a>0)
+{
+b=a%10;
+a=a/10;
+c=(c*10)+b;
+}
+System.out.print("reverse is" +c);
+}
+
+}
+
+
+13.Write a program to give the factorial of a number:
+
+class Factorial{
+
+     public static void main(String args[]){
+	 
+	 int num = 10;
+	 
+	 long factorial = 1;
+	 
+	 for(int i = 1; i <= num; i++){
+	 
+	    factorial *= i;
+	}
+	
+	System.out.printf("Factorial of %d=%d", num, factorial);
+	 
+   }
+
+}
+
+14.Write a program to get the sum of digits:234
+ Class Sum1{
+ public static void main(String a[]){
+ int a=234;
+ int x,sum=0;
+
+ while (a>0)
+ {
+ x=a%10;
+ sum=sum+x;
+ n=n/10;
+ }
+ System.out.println("sum of digits:" +sum);
+ }
+}
+
+
+
+	
+	
+	
+    
+
+
+
+ 
