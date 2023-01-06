@@ -1,0 +1,130 @@
+1.calculating min and max values:
+
+package com;
+
+public class MaxMin 
+{
+	public static void main(String[] args) 
+	{
+		int x[]= {45,333,76,29,900,23,474,654,29,454};
+		int temp = 0;
+		for(int i=0;i<x.length;i++) 
+		{
+			for(int j=0;j<x.length;j++) 
+			{
+			if(x[i]>x[j]) 
+				{
+					temp=x[i];
+					x[i]=x[j];
+					x[j]=temp;	
+				}
+			}
+		}
+		System.out.println("maximum value is "+x[0]+" "+"minimum value is"+x[x.length-1]);
+	}
+
+}
+
+
+
+2.
+package com;
+
+ class Love {
+	 boolean lovePetals(int flower1, int flower2)
+	{
+		  if (flower1 % 2 == 0 && flower2 % 2 == 1 || flower1 % 2 ==1 && flower2 % 2 == 0) 
+		  {
+		    return true;
+		  }
+		  else 
+		  {
+		    return false;
+		  }
+	}  
+	public static void main(String[] args) 
+	{
+		Love l= new Love();
+		 boolean res = l.lovePetals(1, 4); 
+		//bool res=l.lovePetals(2, 4);
+		System.out.println(res);
+	}	
+	
+}
+
+
+3.generalized and specialized class in java 
+a.generalized class:
+*converting subclass type into a superclass type is 
+generalized class
+*due to wide scope they make the subclass 
+to make generalized.
+
+b.specializedclass:
+*The class which is very particular and states the specific details.
+*these classes are placed in the bottom of the inheritance hirarchy.
+
+4.a.make method as private.
+  b.final classes in java:JAVA API String class,System classes&etc..
+  c.Alternative to inheritance:delegation:using an object of another 
+	class as an instance variable and forward message to inheritance.
+	
+5.Sorted collection used is:
+*sorted()  it is performed using campareTo() and comparator which will
+ sort the values in  ascending and descending order.
+
+
+6.Linked list and array list:
+a.Linked list:				
+*dynamic in size.
+*memoery allocated at run time.
+*it will internally call the node .
+*Insertion and deletion operation is faster.
+
+b.Array list:
+*fixed size.
+*Memory allocated at compile time.
+it will internally call array function.
+*insertion and deletion takes time.
+
+
+7.ListIterator vs Iterator in java:
+*Iterator can traverse only in forward direction 
+	whereas ListIterator traverses both in forward and 
+	backward directions.
+*List iterator is available in list where as iterator
+	is available in collection.
+	
+
+
+8.Covarient method overriding in java
+
+9.memory leakage in java
+*Its the time when there are objects present in heap
+	which are no longer in use but garbage collector is not able to 
+	remove them from memory .
+
+
+10Static polymorphism and dynamic polymorphism in java
+
+*Static polymorphism:
+-It occurs during run time
+-method overloading is an example for it
+-These are static binding and early binding are synonyms.
+ 
+
+*Dynamic polymorphism:
+-It occurs during run time
+-method overriding is an axample for it
+-These are dynamic	binding	& late bindings	synonyms
+ 
+11.
+*Encapsulation will be performed by her to secure the data.
+
+
+
+  
+
+
+
+
