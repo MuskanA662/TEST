@@ -1,0 +1,194 @@
+1.Java collection is a framework that provides a set of interface and classes
+	to implement various data structures and algorithms.
+	hierarchy:iterator--->collection--->List---->linked list
+											---->Array List
+									--->Set---->hashset
+											---->linked hashset
+									--->SortedSet--->treeset
+									--->Queue---->linkedlist
+	amin interfaces of java:
+	list vs set vs sortedset vs queue:
+	
+2.There are two interfaces for implementing Map in java: 
+   Map and SortedMap, and three classes: 
+   HashMap: HashMap is the implementation of Map, but it doesn't maintain any order.
+   LinkedHashMap: LinkedHashMap is the implementation of Map. It inherits HashMap class. It maintains insertion order. 
+   TreeMap: TreeMap is the implementation of Map and SortedMap. It maintains ascending order.
+	
+3.Difference between hashset and treeset:
+hashset:The Hash set is executed with the help of a HashTable.
+		It does not authorise a heterogeneous object.
+		It permits a null object.
+		To compare two objects, we use the equals method.
+		It does not support any order
+		
+TreeSet:he tree set is executed with the help of a tree structure.
+		It authorises a heterogeneous object.
+		It does not permit the null object.
+		To compare two objects, we use the compare method.
+		TreeSet supports an object in sorted order.
+		
+		
+4.	It indicates the implementation of hashCode() is native because 
+	there is not any direct method in java to fetch the reference of the object.
+    An object hash code value can change in multiple executions of the same application.
+	If two objects are equal according to equals() method,then their hash code must be same. 
+	If two objects are unequal according to equals() method, their hash code are not required to be different.
+		
+5.fail fast and fail safe iterator in java:
+	Fail-Fast systems abort operation as-fast-as-possible exposing failures immediately and 
+	stopping the whole operation. 
+    Whereas, Fail-Safe systems don't abort an operation in the case of a failure. 
+	Such systems try to avoid raising failures as much as possible.
+
+6.How to convert String to stream 
+	String testString = "String"; 
+	IntStream intStream = testString. chars();
+	
+	
+7.Spliterator api in java:
+	ava Spliterator is an interface in Java Collection API.
+	Spliterator is introduced in Java 8 release in java. 
+	It supports Parallel Programming functionality.
+	We can use it for both Collection API and Stream API classes.
+	It provides characteristics about Collection or API objects.
+	
+	
+8.List the string operations with Stream:
+	1.Overview. Java 8 has introduced a new Stream API that lets us process 
+	data in a declarative manner
+	2.Joining Strings With the Stream API
+	3.Splitting Strings With Stream API
+	4.String Array to Map With Stream API
+	5.Testing
+	6.Conclusion
+	
+	
+9.Spring core:
+	The Core package is the most import component of the Spring Framework. 
+	This component provides the Dependency Injection features.
+
+	
+10.Explain dependency injection and how to achieve it:
+	Dependency Injection (DI) is a design pattern used to implement IoC.
+	 It allows the creation of dependent objects outside of a class and provides 
+	 those objects to a class through different ways. Using DI, we move the creation 
+	 and binding of the dependent objects outside of the class that depends on them.
+	 
+	 
+	 How to achieve it:
+	 
+	 
+	 
+11.How can we inject Beans in Spring:
+    We can use Spring Framework to define our beans and their dependency injection. The @ComponentScan annotation is used to 
+    find beans and the corresponding injected with @Autowired annotation. If you followed the Spring Boot typical layout, 
+	no need to specify any arguments for @ComponentScan annotation.
+	
+	
+12.can we have more than  one spring configiration files in one project?
+   how will spring get to know whether it is a configuration file or component file or bean?
+   
+
+
+
+13.
+                 StringBuffer                                                  StringBuilder
+1)  StringBuffer is synchronized i.e. thread safe. 	                   StringBuilder is non-synchronized i.e. not thread safe. 
+2)	StringBuffer is less efficient than StringBuilder.	               StringBuilder is more efficient than StringBuffer.
+3)	StringBuffer was introduced in Java 1.0	                           StringBuilder was introduced in Java 1.5
+
+14.
+The BeanFactory Interface:
+root interface for accessing a Spring bean container. 
+It is the actual container that instantiates, configures, and manages a number of beans. 
+These beans collaborate with one another and thus have dependencies between themselves. 
+These dependencies are reflected in the configuration data used by the BeanFactory. 
+This interface is implemented by the objects that hold a number of bean definitions, each uniquely identified by a String name. 
+The most common implementation class used for this BeanFactory is XmlBeanFactory available in org.springframework.beans.factory.xml package. 
+
+
+The ApplicationContext Interface:
+This interface is designed on top of the BeanFactory interface. 
+The ApplicationContext interface is the advanced container that enhances BeanFactory functionality in a more framework-oriented style.
+ While the BeanFactory provides basic functionality for managing and manipulating beans, 
+often in a programmatic way, the ApplicationContext provides extra functionality like MessageSource, Access to resources, 
+Event propagation to beans, Loading of multiple (hierarchical) contexts etc. There are so many implementation classes that can be used 
+such as ClassPathXmlApplicationContext, FileSystemXmlApplicationContext, AnnotationConfigWebApplicationContext etc.
+
+
+
+15.
+	Spring Aop:
+	IOC:
+	POJO:
+	@Component:A component is the fundamental user interface object in Java. Everything you see on the display in a Java 
+	application is a component.
+	@ComponentScan:
+	@Bean:Encapsulate many object into single object
+16.
+
+
+
+17.
+Maven is a powerful project management tool that is based on POM (project object model). 
+It is used for projects build, dependency and documentation.
+
+Gradle is a build automation tool known for its flexibility to build software.
+ A build automation tool is used to automate the creation of applications. 
+ The building process includes compiling, linking, and packaging the code.
+ 
+ Simply put, Apache Tomcat is a web server and servlet container that's used 
+ to deploy and serve Java web applications
+ 
+ Quarkus was created to enable Java developers to create applications for a modern, 
+ cloud-native world. Quarkus is a Kubernetes-native Java framework tailored for 
+ GraalVM and HotSpot, 
+ 
+ 
+ platform developed by SonarSource for continuous inspection of code quality to perform 
+ automatic reviews with static analysis of code to detect bugs and code smells on 29 
+ programming languages. SonarQube offers reports on duplicated code, coding standards, 
+ unit tests, code coverage, code complexity, comments, bugs, and security recommendations.
+ crafted from best-of-breed Java libraries and standards.
+ 
+ 
+ A server commonly refers to a computer program that receives and responds to requests 
+ made over a network. It receives the request for a web document from the 
+ client and sends the requested information to the client computer on the Internet.
+ 
+ 
+ The process becomes more consistent with the help of build automation tools.
+
+18.
+19.
+
+
+
+
+20.write a program to remove first and last element from a linked list:
+import java.util.*;
+
+  public class Abc {
+  public static void main(String[] args) {
+    
+     LinkedList<String> l_list = new LinkedList<String>();
+          l_list.add("Red");
+          l_list.add("Green");
+          l_list.add("Black");
+          l_list.add("Pink");
+          l_list.add("orange");
+      
+   System.out.println("The Original linked list: " + l_list);
+
+    Object firstElement = l_list.removeFirst();
+    System.out.println("Element removed: "+ firstElement);
+ 
+    Object lastElement = l_list.removeLast();
+    System.out.println("Element removed: "+ lastElement);
+    System.out.println("The New linked list: " + l_list);
+  }
+}
+
+
+
